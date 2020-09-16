@@ -1,0 +1,16 @@
+.section{
+  padding: 4rem 0;
+  &--dark{
+    // background-image: url(../images/fondos.png);
+    background: $grey-light-color;
+    color: $principal-color;
+  }
+  &--secondary{
+    background: $secondary-color;
+    color: $principal-color;
+  }
+  &--primary{
+    background: $principal-color;
+    color: $white-color;
+  }
+}

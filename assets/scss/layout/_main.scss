@@ -1,0 +1,17 @@
+
+.wrapper{
+ padding: 0 1.5rem;
+  margin: auto;
+  @include respond-above(md){
+    max-width: 50rem;
+    padding: 0;
+  }
+  &--big{
+    padding: 0 2rem;
+    margin:auto;
+    @include respond-above(md){
+      max-width: 60rem;
+      padding: 0;
+    }
+  }
+}

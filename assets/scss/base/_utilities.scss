@@ -1,0 +1,51 @@
+.text-center{
+  text-align: center;
+}
+/*COLORS*/
+.text-white{
+  color: $white-color!important;
+}
+.text-black{
+  color: $black-color!important;
+}
+.text-secondary{
+  color: $secondary-color!important;
+}
+
+/*MARGINS*/
+.mt{
+  &--sm{
+    margin-top: 1rem;
+  }
+  &--md{
+    margin-top: 3rem;
+  }
+  &--lg{
+    margin-top: 5rem;
+  }
+  &--xxl{
+    margin-top: 10rem;
+  }
+}
+.mb{
+  &--sm{
+    margin-bottom: 1rem;
+  }
+  &--md{
+    margin-bottom: 3rem;
+  }
+  &--lg{
+    margin-bottom: 5rem;
+  }
+  &--xxl{
+    margin-bottom: 10rem;
+  }
+}
+/*DISPLAYS*/
+.flex{
+  display: flex;
+  &--center{
+    justify-content: center;
+    align-items: center;
+  }
+}
