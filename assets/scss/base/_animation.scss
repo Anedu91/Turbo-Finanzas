@@ -84,3 +84,9 @@
     }
   }
 }
+
+@keyframes moveArrow{
+  0%{right: 30%;}
+  50%{right: 32%;}
+  100%{right: 30%;}
+}

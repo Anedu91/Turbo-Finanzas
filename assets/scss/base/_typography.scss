@@ -26,6 +26,16 @@ body{
   @include respond-above(sm){
     font-size: 3.5rem;
   }
+  @include respond-above(lg){
+    font-size: 3.5rem;
+  }
+  &--big{
+    font-size: 3.5rem;
+    @include respond-above(lg){
+      font-size: 4.5rem;
+
+    }
+  }
 }
 .heading-3{
   @extend %heading;
@@ -54,6 +64,10 @@ body{
   &--forty{
     @extend %highlight;
     background-image: linear-gradient(transparent 50%,$forty-color 50%,$forty-color 85%,transparent 85%,transparent 100%);
+  }
+  &--fifty{
+    @extend %highlight;
+    background-image: linear-gradient(transparent 50%,$fifty-color 50%,$fifty-color 85%,transparent 85%,transparent 100%);
   }
   
 }

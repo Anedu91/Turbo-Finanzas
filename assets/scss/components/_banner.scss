@@ -5,12 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   @include respond-above(sm){
     padding: 5rem 0;
   }
   &__title{
     font-size: 2rem;
     color: $white-color;
+    margin-bottom: 1rem;
     @include respond-above(sm){
       font-size: 3rem;
     }
@@ -32,5 +34,31 @@
     @include respond-above(sm){
       font-size: 1rem;
     }
+    
+  }
+  &__paragraph{
+    color: $white-color;
+    margin-bottom: 1rem;
+  }
+  &--half{
+    background-color: $grey-light-color;
+    margin: auto;
+    padding: 2rem;
+    .banner__link{
+      background: $principal-color;
+      color: $white-color;
+      font-weight: 700;
+    }
+  }
+  &__arrow{
+    display: block;
+    max-width: 150px;
+    position: absolute;
+    right: 30%;
+    bottom: 8%;
+    animation-name: moveArrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 }

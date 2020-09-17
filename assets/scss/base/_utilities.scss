@@ -14,6 +14,9 @@
 .text-black{
   color: $black-color!important;
 }
+.text-primary{
+  color: $principal-color!important;
+}
 .text-secondary{
   color: $secondary-color!important;
 }
@@ -22,6 +25,13 @@
 }
 .text-forty{
   color: $forty-color!important;
+}
+.text-fifty{
+  color: $fifty-color!important;
+}
+
+.bg-fifty{
+  background-color: $fifty-color!important;
 }
 
 /*MARGINS*/
@@ -62,10 +72,33 @@
   }
 }
 
-.wavy-under{
+%wavy{
   margin-bottom: .5rem;
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-color: $secondary-color;
   text-decoration-style: wavy;
+}
+.wavy-under{
+  
+  &--primary{
+    @extend %wavy;
+    text-decoration-color: $principal-color;
+  }
+  &--secondary{
+    @extend %wavy;
+    text-decoration-color: $secondary-color;
+  }
+  &--tertiary{
+    @extend %wavy;
+    text-decoration-color: $tertiary-color;
+  }
+  &--forty{
+    @extend %wavy;
+    text-decoration-color: $forty-color;
+  }
+  &--fifty{
+    @extend %wavy;
+    text-decoration-color: $fifty-color;
+  }
 }
