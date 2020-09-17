@@ -613,3 +613,13 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+.wavy-under {
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-underline-position: under;
+  -webkit-text-decoration-color: #84e1ac;
+          text-decoration-color: #84e1ac;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}

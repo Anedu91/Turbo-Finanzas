@@ -61,3 +61,11 @@
     align-items: center;
   }
 }
+
+.wavy-under{
+  margin-bottom: .5rem;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: $secondary-color;
+  text-decoration-style: wavy;
+}
