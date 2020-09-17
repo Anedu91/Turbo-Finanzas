@@ -2,9 +2,15 @@
 .wrapper{
  padding: 0 1.5rem;
   margin: auto;
+  position: relative;
   @include respond-above(md){
-    max-width: 50rem;
+    max-width: 60rem;
     padding: 0;
+  }
+  p{
+    &:not(:last-child){
+      margin-bottom: .7rem;
+    }
   }
   &--big{
     padding: 0 2rem;

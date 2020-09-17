@@ -12,13 +12,17 @@
 
 
 /*COMPONENTS*/
+@import "components/about";
 @import "components/banner";
+@import "components/icons";
+@import "components/illustration";
 @import "components/list";
 @import "components/section";
 @import "components/step";
 
 /*LAYOUT*/
 @import "layout/footer";
+@import "layout/grid";
 @import "layout/header";
 @import "layout/main";
 @import "layout/navigation";

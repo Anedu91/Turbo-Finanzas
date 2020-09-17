@@ -1,6 +1,12 @@
 .text-center{
   text-align: center;
 }
+/*FONT STYLES*/
+.fs{
+  &--italic{
+    font-style: italic;
+  }
+}
 /*COLORS*/
 .text-white{
   color: $white-color!important;
@@ -10,6 +16,12 @@
 }
 .text-secondary{
   color: $secondary-color!important;
+}
+.text-tertiary{
+  color: $tertiary-color!important;
+}
+.text-forty{
+  color: $forty-color!important;
 }
 
 /*MARGINS*/

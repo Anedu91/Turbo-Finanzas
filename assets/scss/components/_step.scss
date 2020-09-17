@@ -39,13 +39,13 @@
   &__text{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 0 2rem;    
+    padding: 0 1rem;    
   }
   &__paragraph{
     margin-top: .5rem;
     font-size: 1rem;
     @include respond-above(md){
-      font-size: .8rem;
+      font-size: 1rem;
     }
   }
 }
