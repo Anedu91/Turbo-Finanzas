@@ -1,6 +1,23 @@
 .about{
-  border: 5px solid $white-color;
-  margin-left: auto!important;
-  margin-right: 0!important;
-  background: $secondary-color;
+  position: relative;
+  &__figure{
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    img{
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+  &__article{
+    padding: 4rem 8rem 2rem 15rem;
+    background: $secondary-color;
+    margin-left: auto!important;
+    margin-right: 0!important;
+    max-width: 70rem;
+    @include respond-above(xxl){
+      max-width: 70rem;
+      padding: 4rem 8rem 2rem 15rem;
+    }
+  }
 }

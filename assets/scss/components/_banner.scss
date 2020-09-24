@@ -41,24 +41,13 @@
     margin-bottom: 1rem;
   }
   &--half{
-    background-color: $grey-light-color;
+    background: hsl(244,18%,21%);
     margin: auto;
     padding: 2rem;
     .banner__link{
-      background: $principal-color;
+      background: $fifty-color;
       color: $white-color;
       font-weight: 700;
     }
-  }
-  &__arrow{
-    display: block;
-    max-width: 150px;
-    position: absolute;
-    right: 30%;
-    bottom: 8%;
-    animation-name: moveArrow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
   }
 }

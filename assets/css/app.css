@@ -202,10 +202,29 @@ p {
 
 /*COMPONENTS*/
 .about {
-  border: 5px solid white;
+  position: relative;
+}
+.about__figure {
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+}
+.about__figure img {
+  max-width: 400px;
+  width: 100%;
+}
+.about__article {
+  padding: 4rem 8rem 2rem 15rem;
+  background: #84e1ac;
   margin-left: auto !important;
   margin-right: 0 !important;
-  background: #84e1ac;
+  max-width: 70rem;
+}
+@media (min-width: 99em) {
+  .about__article {
+    max-width: 70rem;
+    padding: 4rem 8rem 2rem 15rem;
+  }
 }
 
 .banner {
@@ -257,25 +276,14 @@ p {
   margin-bottom: 1rem;
 }
 .banner--half {
-  background-color: #f0f0f0;
+  background: #2d2c3f;
   margin: auto;
   padding: 2rem;
 }
 .banner--half .banner__link {
-  background: #2d2c3f;
+  background: #ff006f;
   color: white;
   font-weight: 700;
-}
-.banner__arrow {
-  display: block;
-  max-width: 150px;
-  position: absolute;
-  right: 30%;
-  bottom: 8%;
-  animation-name: moveArrow;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 
 .arrow {
@@ -387,6 +395,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .hero {
@@ -607,6 +616,10 @@ p {
     max-width: 60rem;
     padding: 0;
   }
+}
+.wrapper--grid {
+  margin: auto;
+  max-width: 80rem;
 }
 
 .text-center {
