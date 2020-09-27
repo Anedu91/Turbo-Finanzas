@@ -9,7 +9,7 @@
   }
   p{
     &:not(:last-child){
-      margin-bottom: .7rem;
+      margin-bottom: .3rem;
     }
   }
   &--big{
@@ -22,7 +22,9 @@
   }
   &--grid{
     margin: auto;
-    max-width: 80rem;
-
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
   }
 }

@@ -1,0 +1,23 @@
+.navigation{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  max-height: 109px;
+}
+
+.navbar{
+  list-style: none;
+  display: flex;
+  align-self: center;
+  &__item{
+    &:not(:last-child){
+      margin-right: 1rem;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: $principal-color;
+    font-weight: 300;
+  }
+}

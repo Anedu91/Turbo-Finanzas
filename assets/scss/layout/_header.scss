@@ -9,29 +9,16 @@
   &:before{
     content: '';
     position: absolute;
-    width: 100%;
+    width:70vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     top: 0;
-    left: 0;
-
-    background-image: url(../images/hero-top-responsive.svg), url(../images/hero-bottom-responsive.svg);
-    background-repeat: no-repeat;
+    right: 0;
+    background: url(../images/hero-bg.svg);
     z-index: -1;
-    background-position: top right, bottom left;
-    background-size: 33% ,45%;
-    @include respond-above(sm){
-      background-size: 43%;
-    }
-    @include respond-above(lg){
-      background-image: url(../images/hero-top.svg);
-      background-repeat: no-repeat;
-      background-position: 115% 0;
-      z-index: -1;
-      background-size: 65%;
-    }
-    @include respond-above(xxl){
-      background-size: 55%;
-    }
+    
+    
   }
 
   &__grid{
@@ -44,7 +31,7 @@
       grid-row-gap: 0;
     }
     @include respond-above(lg){
-      grid-template-columns: 40vw 1fr;
+      grid-template-columns: 1fr 1fr;
     }
     
   }
@@ -64,6 +51,7 @@
     font-size: 1.3rem;
     letter-spacing: 2px;
     font-weight: 500;
+    font-family: $title-font;
     @include respond-above(sm){
       font-size: 1.5rem;
       letter-spacing: 5px;
@@ -109,46 +97,46 @@
     }
   }
   &__illustration{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    // position: relative;
+    // margin: auto;
+    // width: 700px;
+    // height: 700px;
+    // &:before{
+    //   content: '';
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+       
+    //   background-image: url(../images/figure-background.svg);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    //   background-position: 50% 0;
+    //   z-index: -1;
+    // }
+
     img{
-      max-width: 100%;
+      max-width: 35vw;
       margin: auto;
       display: block;
-      @include respond-above(sm){
-        max-width: 80%
-      }
-      @include respond-above(lg){
-        max-width: 100%;
-        margin-left: auto;
-      }
     }
   }
-  .logo{
-    img{
-      max-width: 200px;
-      @include respond-above(sm){
-        max-width: 300px;
-      }
-    }
-    @include respond-above(lg){
-      grid-column: 1 / span 2;
-    }
-  }
+  
   &__btn{
     display: inline-block;
     text-decoration: none;
     margin-top: 1.5rem;    
     font-size: 1.5rem;
     padding: .5rem 1.5rem;
-    background: $principal-color;
+    background: $secondary-color;
     color: $white-color;
     border-radius: 10px;
     box-shadow: 0px 0px 20px -12px rgba(89,89,89,1);
     border: 2px solid $white-color;
     transition: .5s all;
     @include respond-above(sm){
-      font-size: 2rem;
+      font-size: 1.4rem;
       margin-top: 1rem;
     }
     &:hover{

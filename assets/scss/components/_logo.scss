@@ -1,0 +1,33 @@
+.logo{
+  display: flex;
+  max-height: 129px;
+  svg{
+    width: 6rem;
+    #group-bar{
+      path{
+        fill: $forty-color;
+      }
+    }
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+
+  &__primary{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-top: auto;
+    font-weight: 700;
+    font-family: $title-font;
+  }
+  &__secondary{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+    font-family: $subtitle-font;
+  }
+}
