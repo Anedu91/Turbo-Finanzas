@@ -221,7 +221,7 @@ body {
   color: #595959;
 }
 
-.text-bigger, .heading-3, .heading-2, .heading-1 {
+.heading-3, .heading-2--big, .heading-2, .heading-1 {
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -239,6 +239,7 @@ li, p {
   margin-bottom: 1rem;
   font-size: 2.3rem;
   margin-bottom: 1rem;
+  color: #2d2c3f;
 }
 @media (min-width: 47em) {
   .heading-2 {
@@ -251,6 +252,7 @@ li, p {
   }
 }
 .heading-2--big {
+  color: #2d2c3f;
   font-size: 3.5rem;
 }
 @media (min-width: 74em) {
@@ -279,6 +281,8 @@ p {
 }
 
 .text-bigger {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #2d2c3f;
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
