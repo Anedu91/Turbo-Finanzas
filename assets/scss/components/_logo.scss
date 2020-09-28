@@ -1,43 +1,52 @@
 .logo{
   display: flex;
-  max-height: 129px;
-  svg{
-    width: 4rem;
-    @include respond-above(sm){
-    width: 6rem;      
+  img{
 
+    max-width: 200px;
+    @include respond-above(sm){
+      max-width: 250px;
     }
-    #group-bar{
-      path{
-        fill: $forty-color;
-      }
+    @include respond-above(md){
+      max-width: 350px;
     }
   }
-  &__text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1rem;
-  }
+  // svg{
+  //   width: 4rem;
+  //   @include respond-above(sm){
+  //   width: 6rem;      
 
-  &__primary{
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: 2px;
-    margin-top: auto;
-    font-weight: 700;
-    font-family: $title-font;
-    @include respond-above(sm){
-      font-size: 1.7rem;
-    }
-  }
-  &__secondary{
-    text-transform: uppercase;
-    font-size: .7rem;
-    margin-bottom: .3rem;
-    font-family: $subtitle-font;
-    @include respond-above(sm){
-      font-size: 1.2rem;
-    }
-  }
+  //   }
+  //   #group-bar{
+  //     path{
+  //       fill: $forty-color;
+  //     }
+  //   }
+  // }
+  // &__text{
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   margin-left: 1rem;
+  // }
+
+  // &__primary{
+  //   text-transform: uppercase;
+  //   font-size: .8rem;
+  //   letter-spacing: 2px;
+  //   margin-top: auto;
+  //   font-weight: 700;
+  //   font-family: $title-font;
+  //   @include respond-above(sm){
+  //     font-size: 1.7rem;
+  //   }
+  // }
+  // &__secondary{
+  //   text-transform: uppercase;
+  //   font-size: .7rem;
+  //   margin-bottom: .3rem;
+  //   font-family: $subtitle-font;
+  //   @include respond-above(sm){
+  //     font-size: 1.2rem;
+  //   }
+  // }
 }

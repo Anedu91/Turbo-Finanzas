@@ -1,9 +1,12 @@
 .hero{
   // height: 100vh;
- 
-  padding: 1.5rem 1.5rem;
+  overflow: hidden;
+  // padding: 1.5rem 1.5rem;
   position: relative;
   @include respond-above(sm){
+    // padding: 2rem 3rem;
+  }
+  @include respond-above(md){
     padding: 2rem 3rem;
   }
   @include respond-above(lg){
@@ -27,6 +30,7 @@
   }
 
   &__grid{
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
@@ -41,15 +45,18 @@
     
   }
   &__container{
+    padding: 1.5rem 1.5rem;
     align-self: center;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 1rem;
     @include respond-above(sm){
+      padding: 0 3rem;
       margin-top: 10vw;
     }
     @include respond-above(md){
+      padding: 0;
       margin-top: 15vw;
       max-width: 80%;
     }

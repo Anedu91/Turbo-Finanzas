@@ -3,49 +3,87 @@
   display: flex;
   justify-content: space-between;
   max-height: 109px;
+  padding: 1.5rem 1.5rem;
+  @include respond-above(sm){
+    padding: 2rem 3rem;
+  }
+  @include respond-above(md){
+    padding: 0;
+  }
+  
+  &.active{
+    background: $white-color;
+  }
 }
 
 .navbar{
   list-style: none;
   display: flex;
+  flex-direction: column;
   align-self: flex-start;
-  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  height: 100%;
+  background: $forty-color;
+  padding: 2rem 1rem;
+  width: 250px;
+  transition: .5s all;
+  transform: translateX(250px);
+  &.active{
+    transform: translateX(0);
+  }
   @include respond-above(xs){
     align-self: center;
   }
+  @include respond-above(sm){
+    top: 110px;
+  }
   @include respond-above(md){
+    transform: translateX(0);
+    padding: 0;
+    flex-direction: row;
+    width: auto;
+    top: 0;
+    position: relative;
     display: flex;
   }
-  &__item{
+  &__item{    
+    margin-top: 1rem;
     &:not(:last-child){
       margin-right: 1.2rem;
+    }
+    @include respond-above(md){
+      margin-top: 0
+      
     }
 
     &--mobile{
       display: block;
-      border: 3px solid $principal-color;
-      padding: .3rem .4rem;
-      @include respond-above(xs){
-        padding: .5rem .8rem;
-      }
+      padding: .5rem .8rem;
+      text-align: center;
+      background: $secondary-color;
+      a{
+        color: $white-color;
+      }     
       @include respond-above(md){
         display: none;
       }
     }
-    &--desktop{
-      display: none;
-      @include respond-above(md){
-        display: block;
-      }
-    }
+    // &--desktop{
+    //   display: none;
+    //   @include respond-above(md){
+    //     display: block;
+    //   }
+    // }
   }
   &__link{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: $principal-color;
     font-weight: 300;
     transition: .3s all;
-    @include respond-above(xs){
+    @include respond-above(md){
       font-size: 1.4rem;
     }
     &:hover{
