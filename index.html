@@ -64,19 +64,19 @@
         </button>
         <ul class="navbar">
           <li class="navbar__item navbar__item--desktop">
-            <a href="#" class="navbar__link">Antecendentes</a>
+            <a href="#antecedentes" class="navbar__link">Antecendentes</a>
           </li>
           <li class="navbar__item navbar__item--desktop">
-            <a href="#" class="navbar__link">Link2</a>
+            <a href="#riesgo" class="navbar__link">Link2</a>
           </li>
           <li class="navbar__item navbar__item--desktop">
-            <a href="#" class="navbar__link">About</a>
+            <a href="#about" class="navbar__link">About</a>
           </li>
           <li class="navbar__item navbar__item--desktop">
-            <a href="#" class="navbar__link">Como funciona</a>
+            <a href="#como-funciona" class="navbar__link">Como funciona</a>
           </li>
           <li class="navbar__item navbar__item--mobile">
-            <a href="#" class="navbar__link">Contactame</a>
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/infofinanzas/30min'});return false;" class="navbar__link">Contactame</a>
           </li>
         </ul>
       </nav>
@@ -98,7 +98,7 @@
     </div>
   </header>
   <main class="main">
-      <section class="section section--dark">
+      <section class="section section--dark" id="antecedentes">
         <article class="wrapper mt--md">          
           <h3 class="heading-3">¿Sabías que, según la <span class="tooltip">CFSI <span class="tooltip__icon">*</span></span>, más del 57% de los estadounidenses (¡138 millones de personas!) no goza de una buena salud financiera?</h3>
           <p class="mt--sm">Esto significa que <strong>cientos de millones</strong> de personas en este país:</p>
@@ -140,7 +140,7 @@
           <p>Eso significa que tanto las relaciones emocionales como la salud mental y física de millones de personas en Estados Unidos está en peligro.</p>
         </article>
       </section>
-      <section class="section section--primary riesgo">
+      <section class="section section--primary riesgo" id="riesgo">
         <article class="wrapper">
           <div class="mt--sm mb--md">
             <h2 class="heading-2 text-tertiary">Es probable que tus relaciones y tu salud estén en riesgo.</h2>
@@ -179,9 +179,9 @@
       <div class="banner banner--half">
         <h2 class="banner__title  text-center">¿Listo para mejorar tu vida?</h2>
         <p class="banner__paragraph">Tus problemas financieros pueden destruir tu futuro</p>
-        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/infofinanzas/30min?'});return false;" class="banner__link text-center">Dame 30 minutos</a>
+        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/infofinanzas/30min'});return false;" class="banner__link text-center">Dame 30 minutos</a>
       </div>
-      <section class="section">
+      <section class="section" id="about">
         <div class="about">
           <figure class="about__figure">
             <img src="assets/images/cheo2.png" alt="">
@@ -195,6 +195,7 @@
             <p>Soy un inmigrante venezolano que, como tú, llegó a este país con el sueño de mejorar mi calidad de vida, tener mejores oportunidades, y asegurar el futuro de mi familia.</p>
             <p>Me gradué como contador y dedico mi vida a que personas como tú construyan la vida con la que sueñan.</p>
             <p>Mi experiencia como administrador, vendedor, gerente, y hasta líder del departamento financiero de un hospital en Miami me dan una visión única de las finanzas.</p>
+            <p>Después de trabajar en diferentes áreas, la oportunidad tocó mi puerta y me enseño dos cosas: salud financiera e independencia financiera.</p>
             <p>Ahora mi misión es usar mi experiencia y mis conocimientos para que recuperes tu salud financiera, ganes más control sobre tu vida, y protejas tu salud en todos los sentidos.</p>
             <p>Para empezar, lo único que debes hacer es agendar una llamada gratis de media hora conmigo.</p>          
             <p>Cuéntame cómo están tus finanzas y cuáles son tus metas, y yo desarrollo una estrategia ajustada a tu realidad para que puedas lograr lo que quieres.</p>
@@ -202,7 +203,7 @@
           </article>
       </div>
       </section>
-      <section class="section como-funciona">
+      <section class="section como-funciona" id="como-funciona">
         <div class="wrapper--big">
           <div class="flex flex--center">
             <h2 class="heading-2--big text-center">Cómo funciona</h2>
@@ -281,7 +282,7 @@
               </figure>
               <article class="testimonial__article">
                 <h3 class="heading-3">Amazing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa cumque cum deleniti. Reiciendis, magnam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit esse ipsam fuga dolorem. Quis, dolore?</p>
                 <p class="muted">Maria Sharapova</p>
               </article>
             </div>
@@ -309,6 +310,7 @@
   </footer>
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
   <script src="assets/js/vendor/scroll-out.min.js"></script>
+  <script src="assets/js/vendor/zenscroll-min.js"></script>
   <script>
     ScrollOut({
       targets: '.animated'
