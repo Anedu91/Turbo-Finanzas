@@ -56,17 +56,25 @@
             </div>
           
         </div>
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <ul class="navbar">
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Home</a>
+          <li class="navbar__item navbar__item--desktop">
+            <a href="#" class="navbar__link">Antecendentes</a>
           </li>
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item--desktop">
             <a href="#" class="navbar__link">Link2</a>
           </li>
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item--desktop">
             <a href="#" class="navbar__link">About</a>
           </li>
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item--desktop">
+            <a href="#" class="navbar__link">Como funciona</a>
+          </li>
+          <li class="navbar__item navbar__item--mobile">
             <a href="#" class="navbar__link">Contactame</a>
           </li>
         </ul>
@@ -91,7 +99,7 @@
   <main class="main">
       <section class="section section--dark">
         <article class="wrapper mt--md">          
-          <h3 class="heading-3">¿Sabías que, según la CFSI, más del 57% de los estadounidenses (¡138 millones de personas!) no goza de una buena salud financiera?</h3>
+          <h3 class="heading-3">¿Sabías que, según la <span class="tooltip">CFSI <span class="tooltip__icon">*</span></span>, más del 57% de los estadounidenses (¡138 millones de personas!) no goza de una buena salud financiera?</h3>
           <p class="mt--sm">Esto significa que <strong>cientos de millones</strong> de personas en este país:</p>
           <ul class="list">
             <li class="list__item">gastan más dinero del que ganan,</li>
@@ -102,6 +110,7 @@
           </ul>
           <p>Ahora bien, <strong>seguramente has escuchado</strong> a personas decir que los problemas financieros son <span class="fs--italic">"poco importantes"</span> porque se tratan <span class="fs--italic">"solo de dinero"</span> y que <span class="fs--italic">"no deberíamos dejar que nos afecten tanto"</span>.</p>
           <p>Sin embargo, <strong>no hay nada más alejado de la realidad.</strong></p>
+          <p class="muted">(* Centro para la Innovación de los Servicios Financieros, CFSI por sus siglas en inglés)</p>
           <img src="assets/images/arrow.png" class="arrow" alt="Arrow">
         </article>
       </section>
@@ -121,7 +130,7 @@
               <li class="list__item">diabetes y hasta cáncer.</li>
             </ul>
             <figure class="illustration__sad-man">
-              <!-- <img src="assets/images/sad-man.png" alt=""> -->
+              <img src="assets/images/sickness.png" alt="">
             </figure>
           </div>
           <p>No solo eso.</p>
@@ -177,8 +186,11 @@
             <img src="assets/images/cheo2.png" alt="">
           </figure>
           <article class="about__article">
-            <h2 class="text-bigger">¡Hola!</h2>
-            <p class="mt--md">Mi nombre es José Luis y tengo más de 20 años de experiencia en el área de las finanzas.</p>
+            <h2 class="text-bigger">Mucho gusto.</h2>
+            <figure class="about__img-article">
+              <img src="assets/images/about2.png" alt="">
+            </figure>
+            <p class="mt--md">Mi nombre es José Luis y tengo más de 10 años de experiencia en el área de las finanzas.</p>
             <p>Soy un inmigrante venezolano que, como tú, llegó a este país con el sueño de mejorar mi calidad de vida, tener mejores oportunidades, y asegurar el futuro de mi familia.</p>
             <p>Me gradué como contador y dedico mi vida a que personas como tú construyan la vida con la que sueñan.</p>
             <p>Mi experiencia como administrador, vendedor, gerente, y hasta líder del departamento financiero de un hospital en Miami me dan una visión única de las finanzas.</p>
@@ -197,7 +209,7 @@
           <div class="step mt--lg animated animated--step">
             <div class="step__item">
               <figure class="step__figure">
-                <img src="assets/images/1.png" alt="Reloj">
+                <img src="assets/images/4.png" alt="Reloj">
                 <span class="step__number">1</span>
               </figure>
               <div class="step__text">
@@ -207,7 +219,7 @@
             </div>
             <div class="step__item">
               <figure class="step__figure">
-                <img src="assets/images/4.png" alt="Reloj">
+                <img src="assets/images/2.png" alt="Reloj">
                 <span class="step__number">2</span>
               </figure>
               <div class="step__text">
@@ -217,7 +229,7 @@
             </div>
             <div class="step__item">
               <figure class="step__figure">
-                <img src="assets/images/15.png" alt="Reloj">
+                <img src="assets/images/3.png" alt="Reloj">
                 <span class="step__number">3</span>
               </figure>
               <div class="step__text">
@@ -257,14 +269,42 @@
             </div> -->
           </div>
         </div>
+      </section>    
+      <section class="section testimonials section--dark">
+        <div class="wrapper">
+          <h2 class="heading-2">Testimonios</h2>
+          <div class="testimonial">
+            <div class="testimonial__item">
+              <figure class="testimonial__figure">
+                <img src="assets/images/about2.png" alt="">
+              </figure>
+              <article class="testimonial__article">
+                <h3 class="heading-3">Amazing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa cumque cum deleniti. Reiciendis, magnam.</p>
+                <p class="muted">Maria Sharapova</p>
+              </article>
+            </div>
+            <div class="testimonial__item">
+              <figure class="testimonial__figure">
+                <img src="assets/images/about2.png" alt="">
+              </figure>
+              <article class="testimonial__article">
+                <h3 class="heading-3">Amazing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa cumque cum deleniti. Reiciendis, magnam.</p>
+                <p class="muted">Maria Sharapova</p>
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
       <div class="banner">
         <h2 class="banner__title text-center">Estoy a un clic de distancia.</h2>
         <a href="#" class="banner__link text-center">Agenda una asesoría gratis de 30 minutos conmigo hoy</a>
       </div>
+      
   </main>
   <footer class="footer">
-
+    <p>Turbo Finanzas 2020 &copy; Todos los derechos reservados.</p>
   </footer>
 
   <script src="assets/js/vendor/scroll-out.min.js"></script>

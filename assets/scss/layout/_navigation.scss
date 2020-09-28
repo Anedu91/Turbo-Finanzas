@@ -8,16 +8,58 @@
 .navbar{
   list-style: none;
   display: flex;
-  align-self: center;
+  align-self: flex-start;
+  display: none;
+  @include respond-above(xs){
+    align-self: center;
+  }
+  @include respond-above(md){
+    display: flex;
+  }
   &__item{
     &:not(:last-child){
-      margin-right: 1rem;
+      margin-right: 1.2rem;
+    }
+
+    &--mobile{
+      display: block;
+      border: 3px solid $principal-color;
+      padding: .3rem .4rem;
+      @include respond-above(xs){
+        padding: .5rem .8rem;
+      }
+      @include respond-above(md){
+        display: none;
+      }
+    }
+    &--desktop{
+      display: none;
+      @include respond-above(md){
+        display: block;
+      }
     }
   }
   &__link{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: $principal-color;
     font-weight: 300;
+    transition: .3s all;
+    @include respond-above(xs){
+      font-size: 1.4rem;
+    }
+    &:hover{
+      color: $tertiary-color;
+    }
+  }
+}
+
+.hamburger{
+  &:focus{
+    outline: none;
+  }
+  @include respond-above(md){
+    display: none;
+
   }
 }

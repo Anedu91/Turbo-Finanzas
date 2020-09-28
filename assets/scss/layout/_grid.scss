@@ -1,36 +1,43 @@
 .grid{
   &--2{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     align-items: center;
+    @include respond-above(sm){
+      grid-template-columns: repeat(2,1fr);
+    }
   }
 }
 
 .riesgo{
   position: relative;
   &::after{
-    content: '';
-    position: absolute;
-    width: 10vw;
-    height: 100%;
-    right: 0;
-    top: 0;
-    background-image: url(../images/right-side.svg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    @include respond-above(md){
+      content: '';
+      position: absolute;
+      width: 10vw;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-image: url(../images/right-side.svg);
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   &::before{
-    content: '';
-    position: absolute;
-    width: 10vw;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: url(../images/left-side.svg);
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    @include respond-above(md){
+      content: '';
+      position: absolute;
+      width: 10vw;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url(../images/left-side.svg);
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
 

@@ -4,6 +4,7 @@
 @import "abstracts/variables";
 
 /*VENDORS*/
+@import "vendors/hamburger/hamburgers";
 
 /*BASE*/
 @import "base/animation";
@@ -20,6 +21,7 @@
 @import "components/logo";
 @import "components/section";
 @import "components/step";
+@import "components/testimonials";
 
 /*LAYOUT*/
 @import "layout/footer";

@@ -10,7 +10,7 @@
     padding: 5rem 0;
   }
   &__title{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: $white-color;
     margin-bottom: 1rem;
     @include respond-above(sm){
@@ -39,6 +39,7 @@
   &__paragraph{
     color: $white-color;
     margin-bottom: 1rem;
+    text-align: center;
   }
   &--half{
     background: hsl(244,18%,21%);
@@ -48,6 +49,9 @@
       background: $fifty-color;
       color: $white-color;
       font-weight: 700;
+      &:hover{
+        background: $forty-color;
+      }
     }
   }
 }

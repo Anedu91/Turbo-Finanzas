@@ -24,17 +24,17 @@
     position: relative;
     height: 100%;
     align-self: flex-end;    
-    display: flex;
+    display: none;
+    @include respond-above(md){
+      display: flex;
+    }
     img{
       display: block;
-      max-width: 180px;
+      max-width: 250px;
       margin-top: 3rem;
       align-self: flex-start;
       margin-left: auto;
       margin-right: auto;
-      @include respond-above(sm){
-        max-width: 250px;
-      }
       @include respond-above(lg){
         max-width: 280px;
       }
@@ -49,10 +49,7 @@
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
-      z-index: -1;     
-      @include respond-above(sm){
-        background-size: 80%;
-      }
+      z-index: -1;    
       @include respond-above(md){
         background-size: contain;
         background-position: 0 0;
@@ -64,6 +61,46 @@
     max-width: 70rem;
     margin-left: auto;
     align-self: flex-end;
+    grid-row: 1;
+    @include respond-above(md){
+      grid-row: auto;
+    }
+  }
+  &__img-article{
+    position: relative;
+    margin-top: 1rem;
+    @include respond-above(md){
+      display: none;
+    }
+    &:before{
+      content: '';
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 3rem;
+      background: $secondary-color;
+      z-index: -1;
+    }
+    &:after{
+      content: '';
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
+      background: $forty-color;
+      z-index: -1;
+    }
+    img{
+      border-radius: 50%;
+      max-width: 70%;
+      display: block;
+      margin: auto;
+      border: 1rem solid $tertiary-color;
+    }
   }
   p{
     margin-bottom: .5rem;

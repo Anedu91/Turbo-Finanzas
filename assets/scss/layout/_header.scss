@@ -1,15 +1,18 @@
 .hero{
-  height: 100vh;
+  // height: 100vh;
  
   padding: 1.5rem 1.5rem;
   position: relative;
   @include respond-above(sm){
     padding: 2rem 3rem;
   }
+  @include respond-above(lg){
+    height: 100vh;
+  }
   &:before{
     content: '';
     position: absolute;
-    width:70vw;
+    width:100vw;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -17,7 +20,9 @@
     right: 0;
     background: url(../images/hero-bg.svg);
     z-index: -1;
-    
+    @include respond-above(sm){
+      width:70vw;
+    }
     
   }
 
@@ -39,13 +44,21 @@
     align-self: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
     @include respond-above(sm){
+      margin-top: 10vw;
+    }
+    @include respond-above(md){
+      margin-top: 15vw;
       max-width: 80%;
     }
     @include respond-above(lg){
+      margin: auto;
+      text-align: left;
       max-width: 100%;
-    }
   }
+}
   &__heading-1{
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -53,10 +66,13 @@
     font-weight: 500;
     font-family: $title-font;
     @include respond-above(sm){
-      font-size: 1.5rem;
+      font-size: 2rem;
       letter-spacing: 5px;
     }
     @include respond-above(md){
+      font-size: 2.5rem;
+    }
+    @include respond-above(lg){
       font-size: 1.8rem;
     }
     
@@ -68,7 +84,10 @@
     letter-spacing: .5px;
     display: block;
     @include respond-above(sm){
-      font-size: 2.3rem;
+      font-size: 2.7rem;
+    }
+    @include respond-above(md){
+      font-size: 3rem;
     }
     @include respond-above(lg){
       font-size: 2.2rem;
@@ -81,45 +100,52 @@
     }
   }
   &__heading-2{
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: .5rem;
     @include respond-above(md){
+      font-size: 3rem;
+    }
+    @include respond-above(lg){
       font-size: 2.5rem;
     }
   }
   &__paragraph{
     margin-top: 1rem;
-    font-size: 1.3rem;    
+    font-size: 1.5rem;    
     letter-spacing: 1px;
     color: rgba($text-color,.7);
     @include respond-above(sm){
+    }
+    @include respond-above(md){
+      font-size: 1.8rem;
+    }
+    @include respond-above(lg){
       padding-right: 5rem;
+      font-size: 1.3rem;
+
     }
   }
   &__illustration{
-    // display: flex;
-    // align-items: center;
-    // position: relative;
-    // margin: auto;
-    // width: 700px;
-    // height: 700px;
-    // &:before{
-    //   content: '';
-    //   width: 100%;
-    //   height: 100%;
-    //   position: absolute;
-       
-    //   background-image: url(../images/figure-background.svg);
-    //   background-repeat: no-repeat;
-    //   background-size: 100%;
-    //   background-position: 50% 0;
-    //   z-index: -1;
-    // }
-
+    margin-top: 1rem;
+    @include respond-above(sm){
+      margin-top: 3rem;
+    }
+    @include respond-above(lg){
+      margin-top: 0;
+    }
     img{
-      max-width: 35vw;
+      max-width: 70vw;
       margin: auto;
       display: block;
+      @include respond-above(sm){
+        max-width: 60vw;
+      }
+      @include respond-above(md){
+        max-width: 50vw;
+      }
+      @include respond-above(lg){
+        max-width: 35vw;
+      }
     }
   }
   

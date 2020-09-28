@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600;700&family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400&family=Prompt:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Kanit:wght@300;400&family=Vollkorn:ital,wght@0,400;0,700;1,500&display=swap');
 body{
   font-family: $principal-font;
   color: $text-color;
@@ -21,7 +21,7 @@ body{
 .heading-2{
   @extend %heading;
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
   @include respond-above(sm){
     font-size: 3.5rem;
@@ -48,29 +48,6 @@ body{
 .heading-4{
   font-size: 1.4rem;
 }
-%highlight{
-  background-repeat: no-repeat;
-  display: inline;
-}
-.highlight{
-  &--secondary{
-    @extend %highlight;
-    background-image: linear-gradient(transparent 50%,$secondary-color 50%,$secondary-color 85%,transparent 85%,transparent 100%);
-  }
-  &--tertiary{
-    @extend %highlight;
-    background-image: linear-gradient(transparent 50%,$tertiary-color 50%,$tertiary-color 85%,transparent 85%,transparent 100%);
-  }
-  &--forty{
-    @extend %highlight;
-    background-image: linear-gradient(transparent 50%,$forty-color 50%,$forty-color 85%,transparent 85%,transparent 100%);
-  }
-  &--fifty{
-    @extend %highlight;
-    background-image: linear-gradient(transparent 50%,$fifty-color 50%,$fifty-color 85%,transparent 85%,transparent 100%);
-  }
-  
-}
 p{
  @extend %regular-text;
  line-height: 1.8;
@@ -80,6 +57,26 @@ li{
   @extend %regular-text;
 }
 .text-bigger{
-  font-size: 5rem;
+  @extend %heading;
+  font-size: 3rem;
   font-weight: 700;
+  text-align: center;
+  @include respond-above(sm){
+    font-size: 5rem;
+    text-align: left;
+  }
+}
+.tooltip{
+  position: relative;
+  &__icon{
+    font-size: 1rem;
+    position: absolute;
+    color: rgba($text-color,.8);
+
+  }
+}
+.muted{
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: rgba($text-color,.8);
 }

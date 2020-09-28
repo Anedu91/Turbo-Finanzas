@@ -2,7 +2,11 @@
   display: flex;
   max-height: 129px;
   svg{
-    width: 6rem;
+    width: 4rem;
+    @include respond-above(sm){
+    width: 6rem;      
+
+    }
     #group-bar{
       path{
         fill: $forty-color;
@@ -18,16 +22,22 @@
 
   &__primary{
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: .8rem;
     letter-spacing: 2px;
     margin-top: auto;
     font-weight: 700;
     font-family: $title-font;
+    @include respond-above(sm){
+      font-size: 1.7rem;
+    }
   }
   &__secondary{
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: .7rem;
     margin-bottom: .3rem;
     font-family: $subtitle-font;
+    @include respond-above(sm){
+      font-size: 1.2rem;
+    }
   }
 }
